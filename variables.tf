@@ -1,5 +1,3 @@
-#Module      : LABEL
-#Description : Terraform label module variables.
 variable "name" {
   type        = string
   default     = ""
@@ -18,8 +16,6 @@ variable "label_order" {
   description = "Label order, e.g. `name`."
 }
 
-#Module      : VPC
-#Description : VPCs are virtual networks containing resources that can communicate with each other in full isolation, using private IP addresses.
 variable "enabled" {
   type        = bool
   default     = true

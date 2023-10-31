@@ -1,4 +1,4 @@
 output "urn" {
-  value       = join("", module.vpc[*].urn)
-  description = "Name of SSH key."
+  value       = module.vpc.urn
+  description = "The uniform resource name (URN) for the VPC."
 }
