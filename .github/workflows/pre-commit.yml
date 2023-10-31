@@ -11,5 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
-      - name: self test action
-        uses: ./
+      - uses: pre-commit/action@v3.0.0
