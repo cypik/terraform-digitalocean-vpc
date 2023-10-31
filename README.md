@@ -1,22 +1,22 @@
 # terraform-digitalocean-vpc
 # Terraform Infrastructure as Code (IaC) - DigitalOcean Module
 
-## Overview
-This Terraform module deploys and configures DigitalOcean resources, providing a standardized way to manage infrastructure components.
+## Table of Contents
 
-## Prerequisites
-- [Terraform](https://www.terraform.io/downloads.html) installed
-- DigitalOcean API token configured
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Module Inputs](#module-inputs)
+- [Module Outputs](#module-outputs)
+- [Examples](#examples)
+- [License](#license)
+
+
+## Introduction
+This Terraform module deploys and configures DigitalOcean resources, providing a standardized way to manage infrastructure components.
 
 ## Usage
 
-1. Ensure you have the required provider configured in your Terraform environment.
-
-    ```hcl
-    provider "digitalocean" {}
-    ```
-
-2. Use the module by referencing its source and providing the required variables.
+- Use the module by referencing its source and providing the required variables.
 
     ```hcl
     module "vpc" {
@@ -28,8 +28,6 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
     }
     ```
 
-3. Run `terraform init` and `terraform apply` to deploy the resources.
-
 ## Module Inputs
 
 - `name`: The name of the application.
@@ -38,10 +36,16 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
 - `ip_range`: The IP range for the VPC.
 
 ## Module Outputs
-
 - This module currently does not provide any outputs.
 
- 
+## Examples
+For detailed examples on how to use this module, please refer to the 'examples' directory within this repository.
+
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/opz0/terraform-digitalocean-vpc/blob/readme/LICENSE) file for details.
+
+## Author
+Your Name
+Replace '[License Name]' and '[Your Name]' with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
