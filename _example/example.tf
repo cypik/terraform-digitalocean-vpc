@@ -1,7 +1,7 @@
 provider "digitalocean" {}
 
 module "vpc" {
-  source      = "./.."
+  source      = "./../"
   name        = "app"
   environment = "test"
   region      = "blr1"

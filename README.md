@@ -17,10 +17,10 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
 ## Usage
 
 - Use the module by referencing its source and providing the required variables.
-
+## Example: vpc
     ```hcl
     module "vpc" {
-      source      = "git::https://github.com/opz0/terraform-digitalocean-vpc.git?ref=v1.0.0"
+      source      = "git::https://github.com/cypik/terraform-digitalocean-vpc.git?ref=v1.0.0"
       name        = "app"
       environment = "test"
       region      = "blr1"   # Update with your desired region
@@ -39,12 +39,12 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
 - This module currently does not provide any outputs.
 
 ## Examples
-For detailed examples on how to use this module, please refer to the 'examples' directory within this repository.
+For detailed examples on how to use this module, please refer to the '[examples](https://github.com/cypik/terraform-digitalocean-vpc/blob/readme/_example)' directory within this repository.
 
 
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/opz0/terraform-digitalocean-vpc/blob/readme/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/cypik/terraform-digitalocean-vpc/blob/readme/LICENSE) file for details.
 
 ## Author
 Your Name
