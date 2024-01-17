@@ -1,5 +1,5 @@
 # Terraform-digitalocean-vpc
-# Terraform digitalocean Cloud Resource Group Module.
+# Terraform digitalocean Cloud vpc Module.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
 
 - Use the module by referencing its source and providing the required variables.
 
-    ```hcl
+  ```hcl
     module "vpc" {
       source      = "cypik/vpc/digitalocean"
       version     = "1.0.1"
@@ -30,7 +30,7 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
     ```
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [examples](https://github.com/cypik/terraform-digitalocean-vpc/tree/master/example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [examples](https://github.com/cypik/terraform-digitalocean-vpc/blob/master/_example) directory within this repository.
 
 
 
