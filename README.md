@@ -20,7 +20,7 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
 
     ```hcl
     module "vpc" {
-      source      = "cypik/labels/digitalocean"
+      source      = "cypik/vpc/digitalocean"
       version     = "1.0.1"
       name        = "app"
       environment = "test"
