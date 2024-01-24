@@ -18,16 +18,16 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
 
 - Use the module by referencing its source and providing the required variables.
 
-  ```hcl
-    module "vpc" {
-      source      = "cypik/vpc/digitalocean"
-      version     = "1.0.1"
-      name        = "app"
-      environment = "test"
-      region      = "blr1"   # Update with your desired region
-      ip_range    = "10.10.0.0/16"
-    }
-    ```
+```hcl
+module "vpc" {
+  source      = "cypik/vpc/digitalocean"
+  version     = "1.0.1"
+  name        = "app"
+  environment = "test"
+  region      = "blr1"   # Update with your desired region
+  ip_range    = "10.10.0.0/16"
+}
+```
 
 ## Examples
 For detailed examples on how to use this module, please refer to the [examples](https://github.com/cypik/terraform-digitalocean-vpc/blob/master/_example) directory within this repository.
