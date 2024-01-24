@@ -13,7 +13,7 @@ variable "environment" {
 variable "label_order" {
   type        = list(any)
   default     = ["name", "environment"]
-  description = "Label order, e.g. `name`."
+  description = "Label order, e.g. `cypik`."
 }
 
 variable "enabled" {
@@ -42,6 +42,6 @@ variable "ip_range" {
 
 variable "managedby" {
   type        = string
-  default     = ""
-  description = "ManagedBy, eg 'Opz0'"
+  default     = "cypik"
+  description = "ManagedBy, eg 'cypik'"
 }
