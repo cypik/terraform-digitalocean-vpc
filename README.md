@@ -21,11 +21,11 @@ This Terraform module deploys and configures DigitalOcean resources, providing a
 ```hcl
 module "vpc" {
   source      = "cypik/vpc/digitalocean"
-  version     = "1.0.1"
+  version     = "1.0.2"
   name        = "app"
   environment = "test"
   region      = "blr1"   # Update with your desired region
-  ip_range    = "10.10.0.0/16"
+  ip_range    = "10.11.0.0/16"
 }
 ```
 
@@ -46,20 +46,20 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.6.6 |
-| <a name="requirement_digitalocean"></a> [digitalocean](#requirement\_digitalocean) | >= 2.34.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.5 |
+| <a name="requirement_digitalocean"></a> [digitalocean](#requirement\_digitalocean) | >= 2.40.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | >= 2.34.1 |
+| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | >= 2.40.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | cypik/labels/digitalocean | 1.0.1 |
+| <a name="module_labels"></a> [labels](#module\_labels) | cypik/labels/digitalocean | 1.0.2 |
 
 ## Resources
 
