@@ -16,6 +16,12 @@ variable "label_order" {
   description = "Label order, e.g. `cypik`."
 }
 
+variable "managedby" {
+  type        = string
+  default     = "cypik"
+  description = "ManagedBy, eg 'cypik'"
+}
+
 variable "enabled" {
   type        = bool
   default     = true
@@ -38,10 +44,4 @@ variable "ip_range" {
   type        = string
   default     = ""
   description = "The range of IP addresses for the VPC in CIDR notation. Network ranges cannot overlap with other networks in the same account and must be in range of private addresses as defined in RFC1918. It may not be larger than /16 or smaller than /24."
-}
-
-variable "managedby" {
-  type        = string
-  default     = "cypik"
-  description = "ManagedBy, eg 'cypik'"
 }
